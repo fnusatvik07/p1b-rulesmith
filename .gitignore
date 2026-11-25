@@ -1,0 +1,13 @@
+# never ship
+_private/
+.env
+*.env
+.venv/
+.cache/
+__pycache__/
+*.pyc
+.DS_Store
+# local working files
+data/real/_*.log
+video/build/
+video/node_modules/

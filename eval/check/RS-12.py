@@ -1,0 +1,7 @@
+"""RS-12 Card velocity rules: check_ tests."""
+CASES = [
+    {'name': 'check_1', 'args': '[{"ts": datetime(2026, 11, 25, 10, 9, tzinfo=timezone.utc), "amount": Decimal("300"), "channel": "cnp", "country": "US"}, {"ts": datetime(2026, 11, 25, 10, 0, tzinfo=timezone.utc), "amount": Decimal("400"), "channel": "cnp", "country": "US"}, {"ts": datetime(2026, 11, 25, 10, 4, tzinfo=timezone.utc), "amount": Decimal("400"), "channel": "cnp", "country": "US"}]', 'expect': '["V1"]'},
+    {'name': 'check_2', 'args': '[{"ts": datetime(2026, 11, 25, 10, 0, tzinfo=timezone.utc), "amount": Decimal("400"), "channel": "cnp", "country": "US"}, {"ts": datetime(2026, 11, 25, 10, 4, tzinfo=timezone.utc), "amount": Decimal("400"), "channel": "cnp", "country": "US"}, {"ts": datetime(2026, 11, 25, 10, 10, tzinfo=timezone.utc), "amount": Decimal("200"), "channel": "cnp", "country": "US"}]', 'expect': '[]'},
+    {'name': 'check_3', 'args': '[{"ts": datetime(2026, 11, 25, 10, 0, tzinfo=timezone.utc), "amount": Decimal("50"), "channel": "cp", "country": "US"}, {"ts": datetime(2026, 11, 25, 11, 0, tzinfo=timezone.utc), "amount": Decimal("60"), "channel": "cp", "country": "ca"}]', 'expect': '["V2"]'},
+    {'name': 'check_4', 'args': '[{"ts": datetime(2026, 11, 25, 10, 0, tzinfo=timezone.utc), "amount": Decimal("50"), "channel": "cp", "country": "US"}, {"ts": datetime(2026, 11, 25, 11, 1, tzinfo=timezone.utc), "amount": Decimal("60"), "channel": "cp", "country": "CA"}]', 'expect': '[]'},
+]

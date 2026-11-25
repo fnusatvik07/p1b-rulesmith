@@ -1,0 +1,182 @@
+[
+  {
+    "id": "RS-01",
+    "func": "foreign_transaction_fee",
+    "title": "Foreign transaction fee",
+    "folder": "RS-01_foreign_transaction_fee",
+    "n_visible": 3,
+    "n_check": 5,
+    "n_private": 6
+  },
+  {
+    "id": "RS-02",
+    "func": "late_fee",
+    "title": "Late payment fee",
+    "folder": "RS-02_late_fee",
+    "n_visible": 3,
+    "n_check": 4,
+    "n_private": 5
+  },
+  {
+    "id": "RS-03",
+    "func": "add_business_days",
+    "title": "Add business days",
+    "folder": "RS-03_add_business_days",
+    "n_visible": 3,
+    "n_check": 4,
+    "n_private": 5
+  },
+  {
+    "id": "RS-04",
+    "func": "provisional_credit_deadline",
+    "title": "Provisional credit deadline (Reg E)",
+    "folder": "RS-04_provisional_credit_deadline",
+    "n_visible": 3,
+    "n_check": 3,
+    "n_private": 3
+  },
+  {
+    "id": "RS-05",
+    "func": "investigation_deadline",
+    "title": "Investigation deadline (Reg E)",
+    "folder": "RS-05_investigation_deadline",
+    "n_visible": 3,
+    "n_check": 3,
+    "n_private": 3
+  },
+  {
+    "id": "RS-06",
+    "func": "mask_pan",
+    "title": "Mask a card number",
+    "folder": "RS-06_mask_pan",
+    "n_visible": 3,
+    "n_check": 4,
+    "n_private": 4
+  },
+  {
+    "id": "RS-07",
+    "func": "validate_iban",
+    "title": "Validate an IBAN",
+    "folder": "RS-07_validate_iban",
+    "n_visible": 3,
+    "n_check": 4,
+    "n_private": 5
+  },
+  {
+    "id": "RS-08",
+    "func": "annual_interest",
+    "title": "Tiered savings interest",
+    "folder": "RS-08_annual_interest",
+    "n_visible": 3,
+    "n_check": 4,
+    "n_private": 4
+  },
+  {
+    "id": "RS-09",
+    "func": "overdraft_fees",
+    "title": "Overdraft fees",
+    "folder": "RS-09_overdraft_fees",
+    "n_visible": 3,
+    "n_check": 3,
+    "n_private": 4
+  },
+  {
+    "id": "RS-10",
+    "func": "atm_withdrawal_allowed",
+    "title": "ATM daily limit",
+    "folder": "RS-10_atm_withdrawal_allowed",
+    "n_visible": 3,
+    "n_check": 3,
+    "n_private": 4
+  },
+  {
+    "id": "RS-11",
+    "func": "wire_value_date",
+    "title": "Wire value date and cutoff",
+    "folder": "RS-11_wire_value_date",
+    "n_visible": 3,
+    "n_check": 3,
+    "n_private": 4
+  },
+  {
+    "id": "RS-12",
+    "func": "velocity_flags",
+    "title": "Card velocity rules",
+    "folder": "RS-12_velocity_flags",
+    "n_visible": 3,
+    "n_check": 4,
+    "n_private": 4
+  },
+  {
+    "id": "RS-13",
+    "func": "round_up_total",
+    "title": "Round-up savings",
+    "folder": "RS-13_round_up_total",
+    "n_visible": 3,
+    "n_check": 3,
+    "n_private": 4
+  },
+  {
+    "id": "RS-14",
+    "func": "minimum_payment",
+    "title": "Credit card minimum payment",
+    "folder": "RS-14_minimum_payment",
+    "n_visible": 3,
+    "n_check": 3,
+    "n_private": 4
+  },
+  {
+    "id": "RS-15",
+    "func": "cashback",
+    "title": "Card cashback rewards",
+    "folder": "RS-15_cashback",
+    "n_visible": 3,
+    "n_check": 3,
+    "n_private": 4
+  },
+  {
+    "id": "RS-16",
+    "func": "allocate_payment",
+    "title": "Allocate a card payment across balances",
+    "folder": "RS-16_allocate_payment",
+    "n_visible": 3,
+    "n_check": 3,
+    "n_private": 3
+  },
+  {
+    "id": "RS-17",
+    "func": "chargeback_window_open",
+    "title": "Chargeback time limits",
+    "folder": "RS-17_chargeback_window_open",
+    "n_visible": 3,
+    "n_check": 3,
+    "n_private": 4
+  },
+  {
+    "id": "RS-18",
+    "func": "format_amount",
+    "title": "Format money for customer screens",
+    "folder": "RS-18_format_amount",
+    "n_visible": 3,
+    "n_check": 4,
+    "n_private": 5
+  },
+  {
+    "id": "RS-19",
+    "func": "dormancy_status",
+    "title": "Dormant account status",
+    "folder": "RS-19_dormancy_status",
+    "n_visible": 3,
+    "n_check": 3,
+    "n_private": 4
+  },
+  {
+    "id": "RS-20",
+    "func": "cd_early_withdrawal_penalty",
+    "title": "CD early withdrawal penalty",
+    "folder": "RS-20_cd_early_withdrawal_penalty",
+    "n_visible": 3,
+    "n_check": 3,
+    "n_private": 3
+  }
+]

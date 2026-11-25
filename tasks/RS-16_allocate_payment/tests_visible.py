@@ -1,0 +1,6 @@
+"""RS-16 Allocate a card payment across balances: visible_ tests."""
+CASES = [
+    {'name': 'visible_1', 'args': 'Decimal("300"), Decimal("100"), [{"name": "purchase", "apr": Decimal("20"), "balance": Decimal("1000")}, {"name": "cash", "apr": Decimal("25"), "balance": Decimal("500")}, {"name": "promo", "apr": Decimal("0"), "balance": Decimal("2000")}]', 'expect': '{"purchase": Decimal("0.00"), "cash": Decimal("200.00"), "promo": Decimal("100.00"), "overpayment": Decimal("0.00")}'},
+    {'name': 'visible_2', 'args': 'Decimal("4000"), Decimal("100"), [{"name": "purchase", "apr": Decimal("20"), "balance": Decimal("1000")}, {"name": "cash", "apr": Decimal("25"), "balance": Decimal("500")}, {"name": "promo", "apr": Decimal("0"), "balance": Decimal("2000")}]', 'expect': '{"purchase": Decimal("1000.00"), "cash": Decimal("500.00"), "promo": Decimal("2000.00"), "overpayment": Decimal("500.00")}'},
+    {'name': 'visible_3', 'args': 'Decimal("50"), Decimal("100"), [{"name": "purchase", "apr": Decimal("20"), "balance": Decimal("1000")}, {"name": "cash", "apr": Decimal("25"), "balance": Decimal("500")}, {"name": "promo", "apr": Decimal("0"), "balance": Decimal("2000")}]', 'expect': '{"purchase": Decimal("0.00"), "cash": Decimal("0.00"), "promo": Decimal("50.00"), "overpayment": Decimal("0.00")}'},
+]
